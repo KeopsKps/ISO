@@ -8,7 +8,7 @@
   <meta name="description" content="None">
   
   <link rel="shortcut icon" href="img/favicon.ico">
-  <title>Home - Ingeniería de Software</title>
+  <title>Descripción del problema - Ingeniería de Software</title>
   <link href='https://fonts.googleapis.com/css?family=Lato:400,700|Roboto+Slab:400,700|Inconsolata:400,700' rel='stylesheet' type='text/css'>
 
   <link rel="stylesheet" href="css/theme.css" type="text/css" />
@@ -17,7 +17,7 @@
   
   <script>
     // Current page data
-    var mkdocs_page_name = "Home";
+    var mkdocs_page_name = "Descripci\u00f3n del problema";
     var mkdocs_page_input_path = "index.md";
     var mkdocs_page_url = null;
   </script>
@@ -50,20 +50,20 @@
           
             <li class="toctree-l1 current">
 		
-    <a class="current" href=".">Home</a>
+    <a class="current" href=".">Descripción del problema</a>
     <ul class="subnav">
             
-    <li class="toctree-l2"><a href="#planteamiento-del-problema">Planteamiento del problema</a></li>
+    <li class="toctree-l2"><a href="#sistema-de-urbanismo">Sistema de Urbanismo</a></li>
     
         <ul>
         
-            <li><a class="toctree-l3" href="#commands">Commands</a></li>
+            <li><a class="toctree-l3" href="#introduccion">Introducción</a></li>
         
-            <li><a class="toctree-l3" href="#project-layout">Project layout</a></li>
+            <li><a class="toctree-l3" href="#descripcion-de-la-situacion-actual">Descripción de la situación actual</a></li>
         
-            <li><a class="toctree-l3" href="#texto-largo">Texto largo</a></li>
+            <li><a class="toctree-l3" href="#objetivos-del-proyecto">Objetivos del Proyecto</a></li>
         
-            <li><a class="toctree-l3" href="#texto-largo_1">Texto largo</a></li>
+            <li><a class="toctree-l3" href="#justificacion">Justificación</a></li>
         
         </ul>
     
@@ -98,7 +98,7 @@
     
       
     
-    <li>Home</li>
+    <li>Descripción del problema</li>
     <li class="wy-breadcrumbs-aside">
       
     </li>
@@ -108,35 +108,36 @@
           <div role="main">
             <div class="section">
               
-                <h1 id="planteamiento-del-problema">Planteamiento del problema</h1>
-<p>For full documentation visit <a href="https://mkdocs.org">mkdocs.org</a>.</p>
-<h2 id="commands">Commands</h2>
-<ul>
-<li><code>mkdocs new [dir-name]</code> - Create a new project.</li>
-<li><code>mkdocs serve</code> - Start the live-reloading docs server.</li>
-<li><code>mkdocs build</code> - Build the documentation site.</li>
-<li><code>mkdocs help</code> - Print this help message.</li>
-</ul>
-<h2 id="project-layout">Project layout</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
-<p>Texto normal</p>
-<pre><code>Otro tipo de texto
-</code></pre>
-<h2 id="texto-largo">Texto largo</h2>
-<p>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.</p>
-<h2 id="texto-largo_1">Texto largo</h2>
-<pre><code>mkdocs.yml    # The configuration file.
-docs/
-    index.md  # The documentation homepage.
-    ...       # Other markdown pages, images and other files.
-</code></pre>
+                <h1 id="sistema-de-urbanismo">Sistema de Urbanismo</h1>
+<h3 id="introduccion">Introducción</h3>
+<p>El presente proyecto está basado en el marco de trabajo del área de urbanismo de la alcaldía de Masaya cuya función es registrar los datos de las solicitudes de trámites en hojas de cálculo (MS Excel) y hojas de papel o planillas impresas, posteriormente esta petición de trámite es verificada y si cumple con los parámetros necesarios es aceptada y se le emite al solicitante el permiso necesario para proceder, cabe destacar que el tiempo de respuesta no es estándar.</p>
+<p>Los procesos internos de urbanismo deben cumplir con ciertas responsabilidades con otras áreas que igualmente pertenecen a la alcaldía (catastro y administración tributaria), dichas responsabilidades son realizadas por el secretariado y jefatura de urbanismo para cumplir el propósito de generar informes entregables con información específica como la cantidad de trámites solicitados, cantidad monetaria obtenida por cada tipo de trámite y el total, en casos de los trámites que han requerido romper calles reflejar la cantidad en metros cuadrados de rotura de calle, estos informes son generados con 3 intervalos de tiempo: diario, mensual, y anual.</p>
+<p>Las pautas emitidas para solicitar un trámite son las siguientes:</p>
+<p><img alt="" src="https://lh3.googleusercontent.com/ZJBvrvTZmFsJT0MWgwmztXkzggfHT6W0HydOdwoKYLEWreV3noixHjOPK4RRulNTsFmvsDnkcjtbGFKSdB57dnKPbEQbq0lqDja3_Bh4B2gKZ_c2jr3nRPegMei1VGKPDyEdrIbMvt3XZedOtg" /></p>
+<h3 id="descripcion-de-la-situacion-actual"><strong>Descripción de la situación actual</strong></h3>
+<p>Nuestro proyecto está en el área de urbanismo, que forma parte de la alcaldía de Masaya. Los trabajadores de la alcaldía de Masaya llevan a cabo procesos para la comunidad y están divididos en departamentos o áreas.</p>
+<p>Dentro del área de urbanismo, llegan entidades (interesados) a hacer trámites y necesitan pasar por un proceso de verificación, el cual hace referencia a distintos parámetros que debe cumplir la solicitud. Por medio de este proceso de verificación, se determina si la solicitud es aceptada o negada a la entidad solicitante, y el modo de obtención de respuesta es presencial en las oficinas de urbanismo, y el intervalo de tiempo siempre es variante en dependencia al trámite solicitado.</p>
+<h3 id="objetivos-del-proyecto"><strong>Objetivos del Proyecto</strong></h3>
+<h4 id="general"><strong>General</strong></h4>
+<p>Desarrollar un sistema informático conformado por dos partes: un sistema de escritorio que permita gestionar los registros de las solicitudes de trámites y en base a estos registros facilitar la generación de informes requeridos según las actividades ejecutadas en urbanismo y la otra parte del sistema, una aplicación web para hacer solicitudes de trámites en línea. Y facilite a los usuarios mayor accesibilidad</p>
+<h4 id="especifico"><strong>Específico</strong></h4>
+<ol>
+<li>
+<p>Comprobar los activos disponibles en la empresa y sus especificaciones para determinar si cumplen con los requisitos del proyecto.</p>
+</li>
+<li>
+<p>Analizar el proceso completo de trámite: Solicitud trámite, Revisión documentos, Resolución.</p>
+</li>
+<li>
+<p>Planear alternativas de desarrollo según los activos disponibles de la empresa o los que mejor se acoplen a las características del proyecto.</p>
+</li>
+<li>
+<p>Usar las tecnologías adecuadas para el desarrollo de la aplicación web y el sistema de escritorio.</p>
+</li>
+</ol>
+<h3 id="justificacion"><strong>Justificación</strong></h3>
+<p>El sistema informático con el cual se opera en la alcaldía de Masaya no puede realizar las tareas que son posibles automatizarlas, como el caso de usuarios reincidentes que ya existen en un centro de datos, automatización de informes, solicitudes de trámites de forma remota y especialmente la organización de registros existentes. Debido a esta problemática la cantidad de procesos y tiempo se extiende a más de lo que el personal puede cubrir y se dejan actividades sin realizar, principalmente la de generación de informes que deben ser enviados con diferentes intervalos de tiempo, pero de forma estándar se deben enviar una vez al día, una vez cada dos semanas y una vez al mes a administración tributaria y catastro. La organización de datos para que sea posible llevar a cabo esta tarea requiere de mucho tiempo y en este caso es posible automatizarla.</p>
+<p>Por otro lado los usuarios no pueden solicitar un trámite más que de manera presencial en las oficinas de urbanismo, y teniendo en cuenta que el tiempo de respuesta a las solicitudes no es estándar, se da la situación de que acuden a la institución y la solicitud aún no tiene respuesta.</p>
               
             </div>
           </div>
@@ -185,5 +186,5 @@ docs/
 
 <!--
 MkDocs version : 1.0.4
-Build Date UTC : 2019-04-03 13:38:14
+Build Date UTC : 2019-04-03 13:44:30
 -->
