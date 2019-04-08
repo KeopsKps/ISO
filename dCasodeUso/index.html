@@ -223,76 +223,51 @@ caso de uso en concreto. Nos enfocaremos detalladamente en el <strong>Diagrama E
 <table>
 <thead>
 <tr>
-<th>Actor</th>
+<th>Actores</th>
 <th>Caso de Uso</th>
 <th>Explicación</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><em>Usuario</em></td>
+<td><strong><em>Usuario</em></strong>, <strong><em>BD Web</em></strong></td>
 <td><em>Ingresa al Sistema</em></td>
-<td>El usuario puede usar el sistema web para entrar al sistema y realizar los primeros pasos del tramite.</td>
+<td>El <strong>Usuario</strong> hace una petición para poder entrar al sistema web</td>
 </tr>
 <tr>
-<td><em>Usuario</em></td>
-<td><em>Resolución en linea</em></td>
-<td><strong>Falta la explicación</strong></td>
+<td><strong><em>Usuario</em></strong>, <strong><em>BD Web</em></strong></td>
+<td><em>Resolucion en linea</em></td>
+<td>La BD Web muestra las resoluciones de los tramites al <strong>Usuario</strong></td>
 </tr>
 <tr>
-<td><em>Usuario</em></td>
+<td><strong><em>Usuario</em></strong>, <strong><em>BD Web</em></strong></td>
 <td><em>PreSolicitud</em></td>
-<td>El usuario realiza una <em>PreSolicitud</em> del tramite que desea realizar. De esta forma se puede responder antes si el tramite el valido o no.</td>
+<td>La BD Web guarda los datos de las <strong>PreSolicitud</strong> realizada por el <strong>Usuario</strong></td>
 </tr>
 <tr>
-<td><em>Usuario</em></td>
+<td><strong><em>Usuario</em></strong>, <strong><em>BD Local</em></strong>, <strong><em>Secretario</em></strong></td>
 <td><em>Solicitud</em></td>
-<td>El usuario realiza un <em>Solicitud</em> del tramite, ingresando los datos necesarios para continuar.</td>
+<td>La <strong>BD Local</strong> guarda las solicitudes por tarde del <strong>Usuario</strong>, luego el <strong>Secretariado</strong> recibe la <strong>Solicitud</strong></td>
 </tr>
 <tr>
-<td><em>Usuario</em></td>
-<td><em>Resolución</em></td>
-<td>El usuario puede ver la resolucion de la solicitud realizada previamente.</td>
+<td><strong><em>Secretariado</em></strong></td>
+<td><em>Revision</em></td>
+<td>El <strong>Secretariado</strong> hace una <strong>Revision</strong> sobre los datos de la <strong>Solicitud</strong></td>
 </tr>
 <tr>
-<td><em>Usuario</em></td>
+<td><strong><em>Usuario</em></strong>, <strong><em>Trabajador</em></strong></td>
+<td><em>Resolucion</em></td>
+<td>El <strong>Trabajador</strong> emite una resolución de la solicitud realizada por el <strong>Usuario</strong>.</td>
+</tr>
+<tr>
+<td><strong><em>Usuario</em></strong>, <strong><em>Jefatura</em></strong></td>
 <td><em>Permiso</em></td>
-<td>El usuario recibe permiso una vez que se ha realizado la revisión.</td>
+<td>La <strong>Jefatura</strong> emite un permiso al <strong>Usuario</strong>.</td>
 </tr>
 <tr>
-<td><em>Administración tributaria</em></td>
+<td><strong><em>Administración tributaria</em></strong>, <strong><em>Catastro</em></strong>, <strong><em>BD Local</em></strong>, <strong><em>Trabajador</em></strong></td>
 <td><em>Informe</em></td>
-<td>Recibe los informe de los tramites solicitados</td>
-</tr>
-<tr>
-<td><em>Catastro</em></td>
-<td><em>Informe</em></td>
-<td>Recibe los informes de los tramites solicitados</td>
-</tr>
-<tr>
-<td><em>BD Web</em></td>
-<td><em>Ingresa al Sistema</em></td>
-<td>Responde a un intento de entrar al sistema</td>
-</tr>
-<tr>
-<td><em>BD Web</em></td>
-<td><em>Resolución en linea</em></td>
-<td>Guarda las resoluciones de cada usuario</td>
-</tr>
-<tr>
-<td><em>BD Web</em></td>
-<td><em>PreSolicitud</em></td>
-<td>Recibe datos iniciales de antes de llevar acabo la solicitud</td>
-</tr>
-<tr>
-<td><em>BD Local</em></td>
-<td><em>Solicitud</em></td>
-<td>Se guardan las solicitudes para luego se revisadas por el <strong>Secretariado</strong></td>
-</tr>
-<tr>
-<td><em>BD Local</em></td>
-<td><em>Informe</em></td>
-<td>Genera los informe necesarios</td>
+<td><strong>BD Local</strong> y el <strong>Trabajador</strong> emiten los informes que reciben <strong>Administración tributaria</strong> y <strong>Catastro</strong>.</td>
 </tr>
 </tbody>
 </table>
