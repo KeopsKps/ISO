@@ -66,6 +66,20 @@
     <a class="current" href="./">Diagrama de Clases</a>
     <ul class="subnav">
             
+    <li class="toctree-l3"><a href="#diagrama">Diagrama</a></li>
+    
+
+    <li class="toctree-l3"><a href="#explicacion">Explicación</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#clases-y-sus-significados">Clases y sus significados</a></li>
+        
+            <li><a class="toctree-l4" href="#referencia-de-clases">Referencia de Clases</a></li>
+        
+        </ul>
+    
+
     </ul>
                 </li>
                 <li class="">
@@ -146,7 +160,86 @@
           <div role="main">
             <div class="section">
               
-                
+                <h1 id="diagrama">Diagrama</h1>
+<p><img alt="Diagrama de Clases" src="../img/DiagramaClase/DiagramaClase.png" /></p>
+<h1 id="explicacion">Explicación</h1>
+<h2 id="clases-y-sus-significados">Clases y sus significados</h2>
+<table>
+<thead>
+<tr>
+<th>Nombre clase</th>
+<th>Significado</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Cliente</td>
+<td>Almacena a los <strong>clientes o usuarios</strong> del sistema que realicen tramites al area de urbanismo de la alcaldia de Masaya.</td>
+</tr>
+<tr>
+<td>TelefonoCliente</td>
+<td>Representa los telefonos que puede tener un <strong>Cliente</strong>.</td>
+</tr>
+<tr>
+<td>Tramite</td>
+<td><strong>Generalización</strong> de los tipos de tramites que se cubren en el analisis del sistema.</td>
+</tr>
+<tr>
+<td>TramiteCliente</td>
+<td>Une un <strong>cliente</strong> con un tipo de <strong>tramite</strong>, es decir, el <strong>tramite solicitado</strong> por el <strong>cliente</strong>.</td>
+</tr>
+<tr>
+<td>TramiteVigencia</td>
+<td><strong>Poner la información que falta</strong></td>
+</tr>
+<tr>
+<td>PeriodoVigencia</td>
+<td><strong>Poner la información que falta</strong></td>
+</tr>
+<tr>
+<td>Denuncia</td>
+<td><strong>Poner la información que falta</strong></td>
+</tr>
+<tr>
+<td>RoturaCalle</td>
+<td><strong>Poner la información que falta</strong></td>
+</tr>
+<tr>
+<td>MatriculaLocal</td>
+<td><strong>Poner la información que falta</strong></td>
+</tr>
+<tr>
+<td>Proyecto</td>
+<td>Se realiza a partir de un <strong>TramiteCliente</strong> y representa el proyecto en marcha.</td>
+</tr>
+<tr>
+<td>Encargado</td>
+<td>Datos sobre la persona <strong>encargada</strong> de un <strong>proyecto</strong>. Un <strong>proyecto</strong> solo puede tener un unico <strong>encargado</strong>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="referencia-de-clases">Referencia de Clases</h2>
+<table>
+<thead>
+<tr>
+<th>Seccion</th>
+<th>Parrafo</th>
+<th>Texto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Introducción</td>
+<td>P. 1 Linea 3</td>
+<td>... Posteriormente esta petición de <strong><em>tramite</em></strong> es verificada ... </br> ... Se le transmite al <strong><em>solicitante</em></strong> el permiso necesario ...</td>
+</tr>
+<tr>
+<td>Introducción</td>
+<td>P. 2 Linea 5</td>
+<td>... Por cada tipo de <strong><em>tramite</em></strong> y el total ...</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
