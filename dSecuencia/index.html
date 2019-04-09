@@ -165,17 +165,66 @@
 <p><img alt="Diagrama de Clases" src="../img/DiagramaSecuencia/DiagramaGeneral.png" /></p>
 <h2 id="diagrama-especifico">Diagrama Especifico</h2>
 <h1 id="explicacion">Explicación</h1>
+<p>Explicación de diagrama de secuencia general.</p>
 <table>
 <thead>
 <tr>
 <th>Paso</th>
+<th>Origen</th>
+<th>Destino</th>
+<th>Tipo</th>
 <th>Descripción</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>PreSolicitud</td>
-<td><strong>Que se hace en la PreSolicitud</strong></td>
+<td>Cliente</td>
+<td>Encargado</td>
+<td>Mensaje</td>
+<td></td>
+</tr>
+<tr>
+<td>PeticiónTramite</td>
+<td>Cliente</td>
+<td>Encargado</td>
+<td>Mensaje</td>
+<td><strong>Cliente</strong> realiza la petición del <strong>tramite</strong> al <strong>encargado</strong>.</td>
+</tr>
+<tr>
+<td>VerificarPetición</td>
+<td>Encargado</td>
+<td>Encargado</td>
+<td>Auto Mensaje</td>
+<td>Se verifica que la petición cumpla con todos los parametros establecidos.</td>
+</tr>
+<tr>
+<td>DarPermiso</td>
+<td>Encargado</td>
+<td>Cliente</td>
+<td>Respuesta</td>
+<td>Una vez <strong>verficados</strong> los datos y se acepta el <strong>tramite</strong> se <strong>emite</strong> el <strong>permiso</strong> al <strong>Cliente</strong>.</td>
+</tr>
+<tr>
+<td>CrearTramite</td>
+<td>Cliente</td>
+<td>TramiteCliente</td>
+<td>Mensaje</td>
+<td><strong>Cliente</strong> crea un tramite con los permisos dados por el encargado.</td>
+</tr>
+<tr>
+<td>CrearProyecto</td>
+<td>TramiteCliente</td>
+<td>Proyecto</td>
+<td>Respuesta</td>
+<td>En <strong>respuesta</strong> a la <strong>creación del tramite</strong> se crea un <strong>proyecto</strong>.</td>
+</tr>
+<tr>
+<td>RealizaPago</td>
+<td>Cliente</td>
+<td>TramiteCliente</td>
+<td>Mensaje</td>
+<td>Luego de la <strong>creación</strong> del <strong>proyecto</strong> el <strong>cliente</strong> paga el <strong>tramite</strong></td>
 </tr>
 </tbody>
 </table>
