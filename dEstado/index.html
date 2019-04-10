@@ -167,7 +167,7 @@ del sistema web y el sistema de escritorio.</p>
 <p>Diagrama General de sistema de escritorio</p>
 <p><img alt="Diagrama de Estado Especifico" src="../img/DiagramaEstado/DiagramaEstado1.png" /></p>
 <h1 id="explicacion">Explicación</h1>
-<p>Nomenclatura:</p>
+<p><strong>Nomenclatura</strong></p>
 <table>
 <thead>
 <tr>
@@ -206,10 +206,28 @@ del sistema web y el sistema de escritorio.</p>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>Ingreso al Sistema</strong></td>
+<td>Ingreso pagina web.</td>
+<td>Estado de acceso al sistema web, para consultar tramite o solicitar uno nuevo.</td>
+<td>Se acepta el ingreso al sistema.</td>
+</tr>
+<tr>
+<td><strong>Verificación</strong></td>
+<td>Ingreso al sistema.</td>
+<td>Verificación de los datos enviados como ingreso al sistema.</td>
+<td>Se verifican los datos de entrada al sistema.</td>
+</tr>
+<tr>
+<td><strong>Solicitud</strong></td>
+<td>Verificación de los datos de entrada al sistema.</td>
+<td>En el caso ideal después que se realiza la verificación el usuario procede a realizar la solicitud de tramite, ingresando todos los datos necesarios.</td>
+<td>Se terminan de llenar los datos de la solicitud y se genera la misma.</td>
+</tr>
+<tr>
+<td><strong>PreSolicitud</strong></td>
+<td>Ingreso pagina web.</td>
+<td>Estado alternativo al sistema en el que primero se realiza la PreSolicitud del tramite.</td>
+<td>Se terminan de llenar los datos necesarios.</td>
 </tr>
 </tbody>
 </table>
