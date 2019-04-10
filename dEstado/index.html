@@ -162,9 +162,9 @@
 <h2 id="diagramas-general">Diagramas General</h2>
 <p>Se dividieron los diagramas de estados para las dos partes del sistema total, es decir, la parte
 del sistema web y el sistema de escritorio.</p>
-<p>Diagrama General de sistema web</p>
+<p><strong>Diagrama General de sistema web</strong></p>
 <p><img alt="Diagrama de Estado Especifico" src="../img/DiagramaEstado/DiagramaEstado2.png" /></p>
-<p>Diagrama General de sistema de escritorio</p>
+<p><strong>Diagrama General de sistema de escritorio</strong></p>
 <p><img alt="Diagrama de Estado Especifico" src="../img/DiagramaEstado/DiagramaEstado1.png" /></p>
 <h1 id="explicacion">Explicación</h1>
 <p><strong>Nomenclatura</strong></p>
@@ -229,6 +229,12 @@ del sistema web y el sistema de escritorio.</p>
 <td>Estado alternativo al sistema en el que primero se realiza la PreSolicitud del tramite.</td>
 <td>Se terminan de llenar los datos necesarios.</td>
 </tr>
+<tr>
+<td><strong>Registro PreSolicitud</strong></td>
+<td>Terminación de datos de entrada de PreSolicitud.</td>
+<td>Registro de datos de PreSolicitud, estos datos deben ser llenados sin necesidad de tener una cuenta.</td>
+<td>Finalización del registro de la PreSolicitud.</td>
+</tr>
 </tbody>
 </table>
 <p>Descripción de los estados del <strong><em>Diagrama General de Sistema de Escritorio</em></strong></p>
@@ -243,10 +249,46 @@ del sistema web y el sistema de escritorio.</p>
 </thead>
 <tbody>
 <tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
+<td><strong>Informe</strong></td>
+<td>Ingreso al sistema de entrada.</td>
+<td>Estado que solo sirve para tratar con los informes.</td>
+<td>Se genera los informes disponibles.</td>
+</tr>
+<tr>
+<td><strong>Tramite</strong></td>
+<td>Ingreso al sistema de entrada.</td>
+<td>Ruta alternativa a los informes y se refiere a ver las solicitudes de tramites nuevas.</td>
+<td>Selecciona un tramite para verificación.</td>
+</tr>
+<tr>
+<td><strong>Requisitos</strong></td>
+<td>Selección de tramite.</td>
+<td>Seleccionado un requisito se verifica que cumpla con los requisitos establecidos.</td>
+<td>Si se cumplen los datos se piden los datos que faltan sino se vuelve al estado <strong><em>Tramite</em></strong>.</td>
+</tr>
+<tr>
+<td><strong>Datos</strong></td>
+<td>Correcta verificación de los datos.</td>
+<td>Solicitud de los datos que hacen falta para completar el tramite.</td>
+<td>Se guardan los datos del tramite.</td>
+</tr>
+<tr>
+<td><strong>Registro</strong></td>
+<td>Datos completos del tramite.</td>
+<td>Se guardan los datos completos del tramite.</td>
+<td>Finalización de guardado de datos del tramite.</td>
+</tr>
+<tr>
+<td><strong>Proyecto</strong></td>
+<td>Si el tramite registrado es un proyecto</td>
+<td>Se solicitan los datos necesarios de un proyecto.</td>
+<td>Ingreso de datos necesarios del proyecto.</td>
+</tr>
+<tr>
+<td><strong>RegistroProyecto</strong></td>
+<td>Datos necesarios especificos del proyecto.</td>
+<td>Se guardan los datos del proyecto, asi como la creación del mismo</td>
+<td>Creación de un proyecto.</td>
 </tr>
 </tbody>
 </table>
