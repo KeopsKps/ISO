@@ -90,6 +90,20 @@
 
     <li class="toctree-l3"><a href="#explicacion">Explicación</a></li>
     
+        <ul>
+        
+            <li><a class="toctree-l4" href="#region-interrumpibles">Región Interrumpibles</a></li>
+        
+            <li><a class="toctree-l4" href="#actividades">Actividades</a></li>
+        
+            <li><a class="toctree-l4" href="#sistema-web">Sistema web</a></li>
+        
+            <li><a class="toctree-l4" href="#region-interrumpibles_1">Región Interrumpibles</a></li>
+        
+            <li><a class="toctree-l4" href="#actividades_1">Actividades</a></li>
+        
+        </ul>
+    
 
     </ul>
                 </li>
@@ -155,6 +169,271 @@
                 <h1 id="diagrama">Diagrama</h1>
 <p><img alt="Diagrama de Actividad" src="../img/DiagramaActividad/DiagramaActividad.png" /></p>
 <h1 id="explicacion">Explicación</h1>
+<h3 id="region-interrumpibles">Región Interrumpibles</h3>
+<table>
+<thead>
+<tr>
+<th>Región Interrumpible</th>
+<th>Tramite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Actividades Contenidas</td>
+<td>Tramite, Tipo tramite, Requisitos, Solicitar datos generales, Registrar datos.</td>
+</tr>
+<tr>
+<td>Causas</td>
+<td><strong><em>Cancelar:</em></strong> El usuario del sistema cancela operación.</br><strong><em>Datos:</em></strong> El usuario desconoce los datos generales necesarios para solicitar un tipo de tramite.</br><strong><em>Requisitos:</em></strong> El solicitante no cumple con los requisitos necesarios para solicitar un tipo de tramite.</td>
+</tr>
+<tr>
+<td>Referencia</td>
+<td><strong>Usuario del sistema:</strong> Secretariado o Jefatura.</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Región Interrumpible</th>
+<th>Informe</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Actividades Contenidas</td>
+<td>Informe, Filtrar informe, Dia, Mes, Año, Previsualizar, Generar Informe.</td>
+</tr>
+<tr>
+<td>Causas</td>
+<td><strong><em>Cancelar:</em></strong> El usuario del sistema cancelar operación.</br><strong><em>Fecha Inválida:</em></strong> El usuario del sistema asigno una fecha invalida para generar informe.</td>
+</tr>
+<tr>
+<td>Referencia</td>
+<td><strong>Usuario del sistema:</strong> Secretariado o Jefatura</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Región Interrumpible</th>
+<th>Proyecto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Actividades Contenidas</td>
+<td>Solicitar Datos Proyecto, Guardar Proyecto.</td>
+</tr>
+<tr>
+<td>Causas</td>
+<td><strong><em>Cancelar:</em></strong> El usuario del sistema cancelar operación.</br><strong><em>Datos Proyecto:</em></strong> El cliente no brinda los datos necesarios para guardar proyecto.</td>
+</tr>
+<tr>
+<td>Referencia</td>
+<td><strong>Usuario del sistema:</strong> Secretariado o Jefatura.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="actividades">Actividades</h3>
+<p><strong>Actividades contenidas en la Región interrumpible: Tramite</strong></p>
+<table>
+<thead>
+<tr>
+<th>Actividad</th>
+<th>Proposito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tramite</td>
+<td>Iniciar proceso de solicitud de tramite.</td>
+</tr>
+<tr>
+<td>Tipo Tramite</td>
+<td>Identificar el tipo de tramite que se esta solicitando por el cliente.</td>
+</tr>
+<tr>
+<td>Requisitos</td>
+<td>Verificar que se cumplen los requisitos necesarios para el tipo de tramite que se desea solicitar.</td>
+</tr>
+<tr>
+<td>Solicitud datos generales</td>
+<td>Si se cumplen los requisitos se solicitan los datos generales.</td>
+</tr>
+<tr>
+<td>Registrar Datos</td>
+<td>Si el cliente brinda los datos generales que son requeridos registra los datos de la solicitud en la base de datos.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Actividades contenidas en la Región interrumpible: Proyecto</strong></p>
+<table>
+<thead>
+<tr>
+<th>Actividad</th>
+<th>Proposito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Solicitar datos proyecto</td>
+<td>Si el tramite es un proyecto se solicitan los datos del mismo.</td>
+</tr>
+<tr>
+<td>Guardar Proyecto</td>
+<td>Si se brindan los datos necesarios del proyecto este se guarda en la base de datos y se acepta la solicitud de tramite.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Actividades contenidas en la Región interrumpible: Informe</strong></p>
+<table>
+<thead>
+<tr>
+<th>Actividad</th>
+<th>Proposito</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Informe</strong></td>
+<td>Mostrar al usuario las opciones contenidas en la generación de informes.</td>
+<td>Pre visualizar informe, Filtrar informe.</td>
+</tr>
+<tr>
+<td><strong>Filtrar informe</strong></td>
+<td>Mostrar al usuario los plazos con los que se puede generar informes.</td>
+<td>Día, Mes, Año.</td>
+</tr>
+<tr>
+<td><strong>Dia</strong></td>
+<td>Se pueden generar informes según los registros de un día especifico.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Mes</strong></td>
+<td>Se pueden generar informes según los registros de un mes especifico.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Año</strong></td>
+<td>Se pueden generar informes según los registros de un año especifico.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Previsualizar</strong></td>
+<td>Mostrar una vista previa del informe a generar, si se ha seleccionado un filtro mostrará el resultado según la selección, si no hay ningún filtro previo el informe se genera con la fecha actual.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Generar Informe</strong></td>
+<td>Generar informe y guardarlo como archivo local en formato .xls o .pdf.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Actividades no contenidas en ninguna Región interrumpible</strong></p>
+<table>
+<thead>
+<tr>
+<th>Actividad</th>
+<th>Proposito</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td>Si el tramite no es un proyecto se acepta la solicitud de tramite.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Denegar</strong></td>
+<td>Rechazar solicitud de usuario en caso de que ocurra una excepción.</td>
+<td>Datos proyecto, cancelar.</td>
+</tr>
+<tr>
+<td><strong>No generar informe</strong></td>
+<td>No generar informe en caso de que ocurra una excepción.</td>
+<td>Cancelar, Fecha invalida.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="sistema-web">Sistema web</h3>
+<p><img alt="Diagrama de Actividad de sistema Web" src="../img/DiagramaActividad/DiagramaActividadWeb.png" /></p>
+<h3 id="region-interrumpibles_1">Región Interrumpibles</h3>
+<table>
+<thead>
+<tr>
+<th>Región interrumpible</th>
+<th>Web</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Actividades contenidas</td>
+<td>Credenciales, Sistema, Pre solicitud, Tramite, Formulario.</td>
+</tr>
+<tr>
+<td>Causas</td>
+<td><strong><em>Cancelar</em></strong>: El usuario cancela operación.</td>
+</tr>
+</tbody>
+</table>
+<h3 id="actividades_1">Actividades</h3>
+<p><strong>Actividades contenidas en la región interrumpible: Web</strong></p>
+<table>
+<thead>
+<tr>
+<th>Actividad</th>
+<th>Proposito</th>
+<th>Referencia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Sistema</strong></td>
+<td>Opción de ingreso al sistema.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>Credenciales</strong></td>
+<td>Solicitar las credenciales al usuario, que corresponden a su numero de cedula y numero de recibo del tramite solicitado.</td>
+<td></td>
+</tr>
+<tr>
+<td><strong>PreSolicitud</strong></td>
+<td>Opción de presolicitar un tramite.</td>
+<td>Las presolicitudes son datos generales del usuario y de los tramites para hacer efectiva la solicitud se debe acudir a la oficina de urbanismo.</td>
+</tr>
+<tr>
+<td><strong>Tramite</strong></td>
+<td>El usuario debe seleccionar un tipo de trámite que desea presolicitar.</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Actividades no contenidas en ninguna Región interrumpible</strong></p>
+<table>
+<thead>
+<tr>
+<th>Actividad</th>
+<th>Propósito</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Respuesta tramite</strong></td>
+<td>Muestra si un tramite previamente solicitado ya esta disponible para retirarse en a oficina de urbanismo.</td>
+</tr>
+<tr>
+<td><strong>Guardar presolicitud</strong></td>
+<td>Guardar los datos del usuario y tipo de tramite.</td>
+</tr>
+</tbody>
+</table>
               
             </div>
           </div>
